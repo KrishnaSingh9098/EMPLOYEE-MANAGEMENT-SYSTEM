@@ -118,9 +118,9 @@ const App = () => {
       {!user ? (
         <Login handleLogin={handleLogin} />
       ) : user === ROLES.ADMIN ? (
-        <AdminDashboard />
+        <AdminDashboard  />
       ) : (
-        user === ROLES.EMPLOYEE && <EmployeeDashboard data={loggedInUserData} />
+        user === ROLES.EMPLOYEE && <EmployeeDashboard  data={loggedInUserData} />
       )}
     </>
   );
